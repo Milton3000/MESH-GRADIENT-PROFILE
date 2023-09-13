@@ -1,11 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
+@media screen and (max-width: 936px) {
+	span h1 {
+	  font-size: 2em; 
+	  text-align: center;
+	}   li a button {
+		font-size: 9px; 
+	  }
+  }
+
+  @media screen and (max-width: 336px) {
+	span h1 {
+	  font-size: 1.5em; 
+	  text-align: center;
+	}   li a button  {
+		font-size: 6px; 
+	  }
+  }
+
 :root {
-	--c1: #a862ea;
-	--c2: #6545a4;
-	--c3: #bf62ea;
-	--c4: #6383ea;
-	--c5: #465ca4;
+  --c1: #a862ea;
+  --c2: #6545a4;
+  --c3: #bf62ea;
+  --c4: #6383ea;
+  --c5: #465ca4;
 }
 
 // ::selection {
@@ -13,158 +31,160 @@
 // }
 
 html {
-	color-scheme: dark;
-	background: #31373f;
-	font-family: "Nunito", sans-serif;
+  color-scheme: dark;
+  background: #31373f;
+  font-family: "Nunito", sans-serif;
 }
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	color: #eee;
-	text-decoration: none;
-	font-family: "Nunito", sans-serif;
-	list-style-type: none; //ADDED
-	position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #eee;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  list-style-type: none; //ADDED
+  position: relative;
 }
 
 body {
-	display: grid;
-	place-content: center;
-	// min-height: 480px;
-	// min-width: 60vh;
-	height: 100vh;
-	width: 100%;
-	background: #31373f;
+  display: grid;
+  place-content: center;
+  // min-height: 480px;
+  // min-width: 60vh;
+  height: 100vh;
+  width: 100%;
+  background: #31373f;
 }
 
 section {
-	// min-height: 480px;
-	// min-width: 60vh;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	background: #31373f;
-	position: relative;
-	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  // min-height: 480px;
+  // min-width: 60vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #31373f;
+  position: relative;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .gradient_container {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	animation: rtt 10s linear infinite;
-	// rtt = rotate
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: rtt 10s linear infinite;
+  // rtt = rotate
 }
 
 @keyframes rtt {
-	to {
-		transform: rotate(360deg);
-	}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .box {
-	width: 55%;
-	height: 55%;
-	position: absolute;
-	filter: blur(100px); //CHANGED from 110
-	transition: 2s;
+  width: 55%;
+  height: 55%;
+  position: absolute;
+  filter: blur(100px); //CHANGED from 110
+  transition: 2s;
 }
 
 .format1 {
-	border-radius: 87% 13% 49% 51% / 60% 47% 53% 40%;
-	background: var(--c1);
+  border-radius: 87% 13% 49% 51% / 60% 47% 53% 40%;
+  background: var(--c1);
 }
 
 .format2 {
-	bottom: 0;
-	border-radius: 49% 51% 49% 51% / 72% 47% 53% 28%;
-	background: var(--c3);
+  bottom: 0;
+  border-radius: 49% 51% 49% 51% / 72% 47% 53% 28%;
+  background: var(--c3);
 }
 
 .format3 {
-	right: 0;
-	border-radius: 24% 76% 49% 51% / 23% 47% 53% 77%;
-	background: var(--c4);
+  right: 0;
+  border-radius: 24% 76% 49% 51% / 23% 47% 53% 77%;
+  background: var(--c4);
 }
 
 .format4 {
-	bottom: 0;
-	right: 0;
-	border-radius: 33% 67% 20% 80% / 73% 70% 30% 27%;
-	background: var(--c2);
+  bottom: 0;
+  right: 0;
+  border-radius: 33% 67% 20% 80% / 73% 70% 30% 27%;
+  background: var(--c2);
 }
 
 span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
-	font-size: 3em;
-	pointer-events: none;
+  font-size: 3em;
+  pointer-events: none;
 }
 
 i {
-	position: absolute;
-	bottom: 140px;
-	right: 220px;
-	pointer-events: none;
+  position: absolute;
+  bottom: 140px;
+  right: 220px;
+  pointer-events: none;
 }
 
 a:before {
-	content: "";
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	height: 2px;
-	width: 100%;
-	border-radius: 20px;
-	transform: scaleX(0);
-	background: cyan;
-	transform-origin: right;
-	transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 100%; //Gjorde den 100% för att täcka allt av varje enskild länk.
+  border-radius: 20px;
+  transform: scaleX(0);
+  background: cyan;
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
 a:hover:before {
-	transform: scaleX(1);
-	transform-origin: center;
+  transform: scaleX(1);
+  transform-origin: center;
 }
 
-
-// ALL NY KOD HÄR 
+// ALL NY KOD HÄR
 
 .style {
-	font-size: 2em;
-	text-align: center;
+  font-size: 2em;
+  text-align: center;
 }
 
 nav {
-    ul {
-      display: flex;
-      justify-content: center;
-      padding-top: 10px; // Vertikal spacing
-    }
-
-    li {
-      margin: 0 20px; // Horizontell spacing
-    }
+  ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; // Vertikal spacing
   }
+
+  li {
+    margin: 0 20px; // Horizontell spacing
+  }
+}
 
 button {
-	background-color: rgba(0, 0, 0, 0.5); //semi-transparent backgrund
-	border: none;
-	border-radius: 5px;
-	padding: 5px 15px;
-	color: white;
-	transition: background-color 0.3s ease;
-	z-index: 1000;
-  }
-  
-  button:hover {
-	background-color: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
-  }
-  
+  background-color: rgba(0, 0, 0, 0.5); //semi-transparent bakgrund
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); // Mörkare shades av svart
+}
