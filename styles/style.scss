@@ -8,9 +8,9 @@
 	--c5: #465ca4;
 }
 
-::selection {
-	background: 0;
-}
+// ::selection {
+// 	background: 0;
+// }
 
 html {
 	color-scheme: dark;
@@ -26,6 +26,7 @@ html {
 	text-decoration: none;
 	font-family: "Nunito", sans-serif;
 	list-style-type: none; //ADDED
+	position: relative;
 }
 
 body {
@@ -53,16 +54,15 @@ section {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	animation: 10s linear infinite;
-	// rtt REMOVED
+	animation: rtt 10s linear infinite;
+	// rtt = rotate
 }
 
-// @keyframes rtt {
-// 	to {
-// 		transform: rotate(360deg);
-// 	}
-// }
-
+@keyframes rtt {
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 .box {
 	width: 55%;
@@ -107,10 +107,6 @@ h1 {
 	font-size: 3em;
 	pointer-events: none;
 }
-.style {
-	font-size: 2em;
-	transform: translate(50%, 50%);
-}
 
 i {
 	position: absolute;
@@ -124,8 +120,8 @@ a:before {
 	position: absolute;
 	bottom: -3px;
 	left: 0;
-	height: 3px;
-	width: 88px;
+	height: 2px;
+	width: 100%;
 	border-radius: 20px;
 	transform: scaleX(0);
 	background: cyan;
@@ -135,5 +131,40 @@ a:before {
 
 a:hover:before {
 	transform: scaleX(1);
-	transform-origin: left;
+	transform-origin: center;
 }
+
+
+// ALL NY KOD HÄR 
+
+.style {
+	font-size: 2em;
+	text-align: center;
+}
+
+nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px; // Vertikal spacing
+    }
+
+    li {
+      margin: 0 20px; // Horizontell spacing
+    }
+  }
+
+button {
+	background-color: rgba(0, 0, 0, 0.5); //semi-transparent backgrund
+	border: none;
+	border-radius: 5px;
+	padding: 5px 15px;
+	color: white;
+	transition: background-color 0.3s ease;
+	z-index: 1000;
+  }
+  
+  button:hover {
+	background-color: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
+  }
+  
