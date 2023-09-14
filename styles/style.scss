@@ -1,22 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
 @media screen and (max-width: 936px) {
-	span h1 {
-	  font-size: 2em; 
-	  text-align: center;
-	}   li a button {
-		font-size: 9px; 
-	  }
+  span h1 {
+    font-size: 2em;
+    text-align: center;
   }
+  li a button {
+    font-size: 9px;
+  }
+}
 
-  @media screen and (max-width: 336px) {
-	span h1 {
-	  font-size: 1.5em; 
-	  text-align: center;
-	}   li a button  {
-		font-size: 6px; 
-	  }
+@media screen and (max-width: 336px) {
+  span h1 {
+    font-size: 1.5em;
+    text-align: center;
   }
+  li a button {
+    font-size: 6px;
+  }
+}
 
 :root {
   --c1: #a862ea;
@@ -32,7 +34,7 @@
 
 html {
   color-scheme: dark;
-  background: #31373f;
+  background: hsl(210, 14%, 23%); //rgb(49, 55, 63);
   font-family: "Nunito", sans-serif;
 }
 
@@ -40,7 +42,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: rgb(215, 238, 238);
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   list-style-type: none; //ADDED
@@ -54,7 +56,7 @@ body {
   // min-width: 60vh;
   height: 100vh;
   width: 100%;
-  background: #31373f;
+  background: rgb(49, 55, 63);
 }
 
 section {
@@ -142,7 +144,7 @@ a:before {
   width: 100%; //Gjorde den 100% för att täcka allt av varje enskild länk.
   border-radius: 20px;
   transform: scaleX(0);
-  background: cyan;
+  background: rgb(0, 255, 255);
   transform-origin: right;
   transition: transform 0.3s ease;
 }
@@ -181,10 +183,5 @@ button {
 }
 
 button:hover {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); // Mörkare shades av svart
+  background-color: rgba(0, 0, 0, 0.7); // Mörkare shades av svart
 }
