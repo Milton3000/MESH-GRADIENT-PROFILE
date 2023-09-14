@@ -166,4 +166,14 @@ button {
 
 button:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: black;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
