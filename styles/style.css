@@ -27,7 +27,7 @@
 
 html {
   color-scheme: dark;
-  background: #31373f;
+  background: hsl(210, 14%, 23%);
   font-family: "Nunito", sans-serif;
 }
 
@@ -35,7 +35,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: rgb(215, 238, 238);
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   list-style-type: none;
@@ -47,7 +47,7 @@ body {
   place-content: center;
   height: 100vh;
   width: 100%;
-  background: #31373f;
+  background: rgb(49, 55, 63);
 }
 
 section {
@@ -131,7 +131,7 @@ a:before {
   width: 100%;
   border-radius: 20px;
   transform: scaleX(0);
-  background: cyan;
+  background: rgb(0, 255, 255);
   transform-origin: right;
   transition: transform 0.3s ease;
 }
